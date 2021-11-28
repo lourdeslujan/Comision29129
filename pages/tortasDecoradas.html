@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,800;1,400;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos.css">
+    <title>PasteLou</title>
+</head>
+<body>
+    <header class="header">
+        <div class="headerTitle">
+            <div class = "headerLogo">
+                <a href="../index.html"> <img src="../images/logoPasteLou.jpg" alt="Logo PasteLou"> </a><!-- Icon principal con link a index.html-->
+            </div>
+            <div class="headerTitleText">
+                <h1> PasteLou </h1>
+                <h2> Pastelería Artesanal </h2> 
+            </div>     
+        </div>
+
+        <nav class="headerMenu">
+            <!-- Barra Navegación -->
+            <ul>
+                <li> <a href="../index.html"> Inicio </a> </li>
+                <li> <a href="./tortasDecoradas.html"> Tortas Decoradas</a> </li>
+                <li> <a href="./pasteleriaTradicional.html"> Pastelería Tradicional </li>
+                <li> <a href="./rinconSalado.html"> Rincón Salado </a></li>
+                <li> <a href="./contacto.html"> Contacto </a> </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="productosDestacados">
+    
+        <h2 class="tituloSeccion"> Tortas Decoradas </h2>
+
+        <div class="productosDestacadosCards">
+
+            <article id="circo" class="productosDestacados__card">
+                <div  class="productosDestacados__card__foto"> </div>
+                <h3> Circo </h3>    
+            </article>
+            <article id="naturaleza" class="productosDestacados__card">
+                <div class="productosDestacados__card__foto"></div>
+                <h3> Naturaleza </h3>    
+            </article>
+            <article id="bautismoY1" class="productosDestacados__card">
+                <div class="productosDestacados__card__foto"></div>
+                <h3> Bautismo y 1° Año </h3>    
+            </article>
+
+    
+            <article id="bodas" class="productosDestacados__card">
+                <div  class="productosDestacados__card__foto"> </div>
+                <h3> Bodas </h3>    
+            </article>
+            <article id="quince" class="productosDestacados__card">
+                <div class="productosDestacados__card__foto"></div>
+                <h3> 15 Años </h3>    
+            </article>
+            <article id="giftCard" class="productosDestacados__card">
+                <div class="productosDestacados__card__foto"></div>
+                <h3> Gift Card </h3>    
+            </article>
+
+    </section>
+
+    </div>
+
+    <section>
+        <form action="/" method="post">
+            <legend> Elegí la torta que mas te guste</legend>
+            <fieldset>
+                <select name="">
+                    <option value="tortaCumple">Torta Cumple Tradicional</option>
+                    <option value="tortaCumpleNumero">Torta Numero</option>
+                    <option value="tortaTemática">Torta Temática Infantil</option>
+                    <option value="tortaDespedida">Torta Despedida</option>
+                    <option value="tortaFloral">Torta con arreglo floral</option>
+                    <option value="tortaArtista">Torta Temática con modelado</option>
+                </select>
+                <br> 
+                <br>
+                <label for="">Apto celíaco </label>
+                <input type="checkbox" name="sinTaac" value="1" />
+                <label for="">Doble Relleno </label>
+                <input type="checkbox" name="dobleRelleno" value="1" />
+                <br>
+                <br>
+                <label for="">Chico</label>
+                <input type="radio" name="tamano" value="chico" />
+                <label for="">Mediano</label>
+                <input type="radio" name="tamano" value="mediano" />
+                <label for="">Grande</label>
+                <input type="radio" name="tamano" value="grande" />
+                <br>
+                <br>
+                <textarea name="textarea" rows="10" cols="50">Comentanos algún detalle especial para tu torta</textarea>
+                <br>
+                <br>
+                <input type="submit" value="Agregar al Carrito">
+                <input type="reset" value="Borrar pedido">
+
+
+
+
+
+            </fieldset>
+
+
+        </form>
+
+
+
+    </section>
+
+
+
+
+
+    <footer class="footer">
+        <p>© 2021. Todos los derechos reservados.</p>
+        <a href="https://www.facebook.com/pages/category/Entrepreneur/PasteLou-2195331034122883/"> <img src="../images/logoFacebook.jpg" alt="Enlace PasteLou Facebook"> </a>
+        <img src="../images/logoInstagram.png" alt="Enlace PasteLou Instagram">
+    </footer>
+
+</body>
+</html>

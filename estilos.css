@@ -1,0 +1,387 @@
+html {
+    font-size: 62.5%;
+    }
+
+    *{  /* reseteo gral*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+
+    /* background-color: F9F3DF; */
+
+body{
+    background-color: #F9F3DF;
+    font-family: 'Playfair Display', serif;
+    color: #CF2F87;
+}
+
+
+/* HEADER */
+
+.header{
+    
+    display: flex;
+    flex-direction: column;
+    width:100%
+}
+
+.headerTitle{
+    display: flex;
+    justify-content: space-around;
+    font-size: 3rem; 
+    font-style: italic;
+    font-weight:bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.headerLogo{
+    width:40%;
+}
+
+.headerTitleText{
+    width:60%;
+    display:flex;
+    padding-right: 20%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.headerMenu{
+    top: 5px;
+    margin: 50px 20px;
+    padding:20px 20px;
+    border: #a0966e solid 3px;
+}
+
+.headerMenu ul{
+    display:flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 100%;
+} 
+
+.headerMenu ul li{ 
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 120px;
+
+}
+.headerMenu ul li a{ 
+    text-decoration: none ;
+    color: #CF2F87;
+}
+
+/* CARROUSEL */
+
+.carrousel{
+    width: 100%;
+    height: 200px;
+    margin:20px 0px;
+    background-image: url(./images/galletaBicicleta.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* PRODUCTOS DESTACADOS */
+
+.productosDestacados{
+
+    margin:20px 0px;
+    height: 1050px;
+
+}
+
+.productosDestacadosCards{
+    /* height: 80%; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2%;
+    row-gap: 2%;
+    justify-items: center;
+    align-items:center;
+
+    grid-template-areas: 
+    "card1 card2 card3"
+    "card4 card5 card6"
+    
+}
+
+
+.productosDestacados__card{
+    
+    display:flex;
+    flex-direction: column;
+    margin: 20px 50px;
+    padding: 20px 20px;
+    background-color: #FDE2E2;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 3px solid #a0966e;
+    border-radius: 3%;
+    
+
+}
+
+.productosDestacados__card__foto{
+ 
+    height: 350px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/* Ubicacion y fondo de las Product Card */
+
+
+/*Product Card en index.html*/
+
+#cookies{
+    grid-area: card1;
+}
+
+#cookies div{
+    background-image: url(./images/galletaCraquelada.jpg);
+}
+
+#cupcakes{
+    grid-area: card2;
+}
+
+#cupcakes div{
+    background-image: url(./images/cupCake.jpg);
+}
+
+#cakePops{
+    grid-area: card3;
+}
+
+#cakePops div{
+    background-image: url(./images/cakePop.jpg);
+}
+
+#chocolates{
+    grid-area: card4;
+}
+
+#chocolates div{
+    background-image: url(./images/bombonesChocolate.jpg);
+}
+
+#fechasEspeciales{
+    grid-area: card5;
+}
+
+#fechasEspeciales div{
+    background-image: url(./images/torta23.jpg);
+}
+
+#giftCard{
+    grid-area: card6;
+}
+
+#giftCard div{
+    background-image: url(./images/giftCard.png);
+}
+
+/*Product Card en tortasDecoradas.html*/
+
+#circo{
+    grid-area: card1;
+}
+
+#circo div{
+    background-image: url(./images/tortaCirco.jpg);
+}
+
+#naturaleza{
+    grid-area: card2;
+}
+
+#naturaleza div{
+    background-image: url(./images/tortaFlores.jpg);
+}
+
+#bautismoY1{
+    grid-area: card3;
+}
+
+#bautismoY1 div{
+    background-image: url(./images/tortaBautismo.jpg);
+}
+
+#bodas{
+    grid-area: card4;
+}
+
+#bodas div{
+    background-image: url(./images/tortaBoda.jpg);
+}
+
+#quince{
+    grid-area: card5;
+}
+
+#quince div{
+    background-image: url(./images/torta15.jpg);
+}
+
+#giftCard{
+    grid-area: card6;
+}
+
+#giftCard div{
+    background-image: url(./images/giftCard.png);
+}
+
+
+/*NOSOTROS*/
+
+.nosotros{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: 40px 0;
+}
+
+#nosotros{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding:50px 70px;
+
+}
+
+#nuestraTienda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:40%;
+    overflow: hidden;
+}
+
+
+/* Clases Auxiliares que se reutilizan en varios contenedores */
+
+.tituloSeccion{
+    font-size: 3rem;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.textoGenerico{
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Utilizo criterio Desktop First para los Media Query */
+
+/* 1do MQ para pasar grid de productos de 3 columnas a 2 columnas y 3 filas cuando desaparece una card*/
+
+@media screen and (max-width: 1200px){
+
+    .productosDestacados{
+
+        height: 1550px;
+    
+    }
+    .productosDestacadosCards{
+        /* height: 80%; */
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 2%;
+        row-gap: 5%;
+        grid-template-areas: 
+        "card1 card2" 
+        "card3 card4" 
+        "card5 card6"
+        
+    }
+
+}
+
+/* 2er MQ para corregir solapamiento de elementos nav bar con su borde */
+
+@media screen and (max-width: 1065px){
+    .headerMenu ul{
+        flex-direction: column;
+    }
+    
+    .headerMenu ul li{
+        margin-bottom: 15px;
+    }
+}
+
+/* 3er MQ para pasar grid de productos de 2 columnas a 1 columna y 6 filas cuando desaparece otra card*/
+
+@media screen and (max-width: 780px){
+
+   
+    
+    .productosDestacados{
+
+        height: 3400px;
+    
+    }
+    .productosDestacadosCards{
+        /* height: 80%; */
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            column-gap: 2%;
+            row-gap: 5%;
+            grid-template-areas: 
+            "card1" 
+            "card2" 
+            "card3"
+            "card4" 
+            "card5"
+            "card6"
+        
+    }
+
+
+}
+
+/* 4to MQ (Vista Mobile) para ubicar todo el contenido en forma vertical cuando se empieza a solapar el conenido del Header */
+
+@media screen and (max-width: 550px){
+
+    .headerTitle{
+        flex-direction: column;
+    
+    }
+    
+ 
+
+    .nosotros{
+        flex-direction: column;
+        height:fit-content;
+    }
+
+    #nosotros{
+        width: 100%;
+        padding:50px 30px;
+    }
+    
+    #nuestraTienda{
+        width: 100%;
+       
+  
+    }
+}
+

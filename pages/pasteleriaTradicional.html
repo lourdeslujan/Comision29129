@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,800;1,400;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos.css">
+    <title>PasteLou</title>
+</head>
+<body>
+    <header class="header">
+        
+        <div class="headerTitle">
+            <div class = "headerLogo">
+                <a href="../index.html"> <img src="../images/logoPasteLou.jpg" alt="Logo PasteLou"> </a><!-- Icon principal con link a index.html-->
+            </div>
+            <div class="headerTitleText">
+                <h1> PasteLou </h1>
+                <h2> Pastelería Artesanal </h2> 
+            </div>     
+        </div>
+
+        <nav class="headerMenu">
+            <!-- Barra Navegación -->
+            <ul>
+                <li> <a href="../index.html"> Inicio </a> </li>
+                <li> <a href="./tortasDecoradas.html"> Tortas Decoradas</a> </li>
+                <li> <a href="./pasteleriaTradicional.html"> Pastelería Tradicional </li>
+                <li> <a href="./rinconSalado.html"> Rincón Salado </a></li>
+                <li> <a href="./contacto.html"> Contacto </a> </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section>
+        <!--Productos 1-->
+        <h2 class="tituloSeccion"> Pastelería Tradicional </h2>
+            <article>
+                <img src="../images/tortaFrutilla.jpg" alt="Product Card 1">
+                <p>Tarta de frutillas con crema</p>
+
+                <img src="../images/tortaChocolate.jpg" alt="Product Card 2">
+                <p>Tarta de mouse de chocolate</p>
+                
+                <img src="../images/tortaDurazno.jpg" alt="Product Card 3">
+                <p>Tarta de durazno</p>   
+            </article>
+
+    </section>
+
+
+    <section>
+        <!--Productos 2-->
+        <h2> Pastelería Tradicional </h2>
+            <article>
+                <img src="../images/galletaBicicleta.jpg" alt="Product Card 1">
+                <p>Galletas decoradas</p>
+
+                <img src="../images/galletaCraquelada.jpg" alt="Product Card 2">
+                <p>Galletas craqueladas</p>
+                
+                <img src="../images/galletaFlores.jpg" alt="Product Card 3">
+                <p>Galletas decoradas con pastillaje</p>
+           </article>
+
+    </section>
+
+    <section>
+        <form action="/" method="post">
+            <legend> Elegí la torta que mas te guste</legend>
+            <fieldset>
+                <select name="">
+                    <option value="tartaFrutillas">Tarta de Frutillas con crema</option>
+                    <option value="tartaChocolate">Tarta mouse de chocolate</option>
+                    <option value="tartaDurazno">Tarta de Durazno</option>
+                    <option value="galletasDecoradas">Galletas con decoración pintadas</option>
+                    <option value="galletasCraqueladas">Galletas Craqueladas</option>
+                    <option value="galletasFlores">Galletas decoradas con pastillaje</option>
+                </select>
+                <br> 
+                <br>
+                <label for="sinTacc">Apto celíaco </label>
+                <input type="checkbox" name="sinTacc" value="1" />
+                <br>
+                <br>
+                <label for="cantidad">Cantidad</label>
+                <input id="cantidad" type="number" placeholder="Cantidad">
+                <br>
+                <br>
+                <textarea name="textarea" rows="10" cols="50">Comentanos algún detalle especial para tu pedido</textarea>
+                <br>
+                <br>
+                <input type="submit" value="Agregar al Carrito">
+                <input type="reset" value="Borrar pedido">
+
+
+
+
+
+            </fieldset>
+
+
+        </form>
+
+
+
+    </section>
+
+
+    <footer>
+        <p>© 2021. Todos los derechos reservados.</p>
+        <a href="https://www.facebook.com/pages/category/Entrepreneur/PasteLou-2195331034122883/"> <img src="../images/logoFacebook.jpg" alt="Enlace PasteLou Facebook"> </a>
+        <img src="../images/logoInstagram.png" alt="Enlace PasteLou Instagram">
+    </footer>
+
+</body>
+</html>
